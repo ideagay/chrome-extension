@@ -14,7 +14,6 @@ if (window.Notification && Notification.permission !== "granted") {
 
 function setClock() {
     let time = localStorage.getItem('notice_time');
-    alert('新的时间：' + time);
     interval && clearInterval(interval);
     interval = setInterval(function () {
         let now = new Date();
