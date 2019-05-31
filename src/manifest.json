@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "my-extension",
+    "description": "chrome extension",
+    "version": "0.0.1",
+    "devtools_page": "devtools.html",
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "icons/icon.png",
+        "default_title": "my extension",
+        "default_popup": "popup.html"
+    },
+    "background":{
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "cookies",
+        "unlimitedStorage",
+        "notifications"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
