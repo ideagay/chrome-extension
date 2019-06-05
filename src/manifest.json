@@ -1,13 +1,13 @@
 {
     "manifest_version": 2,
-    "name": "my-extension",
+    "name": "Bleach",
     "description": "chrome extension",
     "version": "0.0.1",
     "devtools_page": "devtools.html",
     "options_page": "options.html",
     "browser_action": {
         "default_icon": "icons/icon.png",
-        "default_title": "my extension",
+        "default_title": "Bleach",
         "default_popup": "popup.html"
     },
     "background":{

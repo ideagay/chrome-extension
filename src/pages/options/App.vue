@@ -20,6 +20,7 @@ export default {
           return alert('点饭时间5点截止,提醒不生效');
         }
         localStorage.setItem('notice_time', this.time);
+        alert('设置成功!');
         chrome.extension.getBackgroundPage().setClock();
       }
   },
